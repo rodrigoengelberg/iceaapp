@@ -1,0 +1,25 @@
+$categories: (
+  ionic: color($colors, primary),
+  casais: #AC282B,
+  aniversariantes: #8E8D93,
+  crianças: #FE4C52,
+  missões: #FD8B2D,
+  jovens: #FED035,
+  denominação: #69BB7B,
+  todos: #3BC7C4,
+  mulheres: #B16BE3,
+  especial: #1b57cc,
+);
+
+@function auxiliary-categories() {
+  @return map-remove($categories);
+}
+
+page-schedule {
+  @each $track, $value in auxiliary-categories() {
+    ion-item-sliding[track=#{$track}] ion-label {
+      border-left: 2px solid $value;
+      padding-left: 10px;
+    }
+  }
+}

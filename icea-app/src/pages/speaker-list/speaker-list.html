@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Membros</ion-title>
+  </ion-navbar>
+  <ion-toolbar no-border-top>
+    <ion-searchbar color="primary"
+                   [(ngModel)]="queryText"
+                   (ionInput)="updateSpeaker()"
+                   placeholder="Buscar">
+    </ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list #speakerList>
+    <ion-list-header>
+      Rol de Membros ICEA
+    </ion-list-header>
+    <ion-item *ngFor="let speaker of speakers | orderBy:'name'" #slidingItem (click)="goToSpeakerDetail(speaker)" (press)="openContact(speaker)"
+                      [hidden]="speaker.hide">
+      <ion-avatar item-start>
+        <ion-icon style="zoom:2.0;" name='person'></ion-icon>
+      </ion-avatar>
+      <h2><b>{{speaker.name}}</b></h2>
+      <!--<h3>{{speaker.phone}}</h3>-->
+      <p>{{speaker.about}}</p>
+    </ion-item>
+  </ion-list>
+</ion-content>

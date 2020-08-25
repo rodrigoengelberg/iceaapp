@@ -1,0 +1,8 @@
+{
+  "name": "icea-app",
+  "app_id": "94442beb",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

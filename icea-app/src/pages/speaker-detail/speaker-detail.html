@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>{{speaker?.name}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="speaker-detail">
+  <div text-center *ngIf="speaker">
+    <ion-avatar item-start>
+      <ion-icon style="zoom:4.0;" name='person'></ion-icon>
+    </ion-avatar><br>
+
+    <!--<button ion-button icon-only clear small color="twitter">-->
+      <!--<ion-icon name="logo-twitter"></ion-icon>-->
+    <!--</button>-->
+    <!--<button ion-button icon-only clear small color="github">-->
+      <!--<ion-icon name="logo-github"></ion-icon>-->
+    <!--</button>-->
+    <!--<button ion-button icon-only clear small color="instagram">-->
+      <!--<ion-icon name="logo-instagram"></ion-icon>-->
+    <!--</button>-->
+  </div>
+
+  <h3>{{speaker?.about}}</h3><br>
+  <p><b>Aniversário:</b> {{speaker?.twitter}}</p><br>
+  <p><b>Email:</b> {{speaker?.email}}</p>
+
+</ion-content>

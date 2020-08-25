@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "379638481516",
+    "firebase_url": "https://iceaapp-cb40c.firebaseio.com",
+    "project_id": "iceaapp-cb40c",
+    "storage_bucket": "iceaapp-cb40c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:379638481516:android:7345176c0741bdd9",
+        "android_client_info": {
+          "package_name": "br.com.icea.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "379638481516-5t86k3cle2ifpfnt1rpocrdqmlc0jjhp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiYXOTMSV7mEmILChukvG0exhzbQKKjd8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
